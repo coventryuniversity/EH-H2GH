@@ -21,7 +21,11 @@ Create Repositories
 
 Create a new repository::
 
-  $git init
+  $ git init
+  ....
+  $ git commit -m "First Commit"
+  $ git remote add origin <url>
+  % git push -u origin master
 
 
 Clone an existing repository::
