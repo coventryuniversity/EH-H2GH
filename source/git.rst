@@ -10,6 +10,9 @@ General Terminology
 Configuring Git
 ================
 
+These Settings are great for a single user on one machine.
+Use the **--local** flag for per-repository settings (i.e. if running on a Flash drive)
+
 Set the username for commits::
 
    $ git config --global user.name "<name">
@@ -34,6 +37,10 @@ Create a new repository::
 Clone an existing repository::
 
   $ git clone <url>
+
+Check URL's for a given repository::
+
+  $ git remote -v
 
 Making Changes
 ==============
@@ -102,6 +109,10 @@ Navigate between branches::
 
   $ git checkout <branch>
 
+Checkin to a branch::
+
+  $ git push origin <branch>
+
 Merge changes between branches::
 
   $ git merge <branch>
@@ -110,4 +121,37 @@ Remove a branch::
 
   $ git branch -d <name>
 
+Forks
+======
 
+Synchronising Forks with the upstream repository
+-------------------------------------------------
+Setting up so changes to upstream repository can also be pulled::
+
+  $ git remote add upstream <upstream-url>
+
+Fetch the latest upstream repo::
+
+  $ git fetch upstream
+
+Checkout the master branch::
+
+  $ git checkout master
+
+And Merge with the upstream/master::
+
+  $ git merge upstream/master
+
+.. NOTE::  
+  
+  Dont forget to push any changes
+
+
+Working On the H2GH
+====================
+
+1) Fork the repository
+2) Clone the fork 
+ <optional> Create a Feature Branch
+3) Work away
+4) Add and commit files as necessary
