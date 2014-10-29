@@ -146,12 +146,3 @@ And Merge with the upstream/master::
   
   Dont forget to push any changes
 
-
-Working On the H2GH
-====================
-
-1) Fork the repository
-2) Clone the fork 
- <optional> Create a Feature Branch
-3) Work away
-4) Add and commit files as necessary
