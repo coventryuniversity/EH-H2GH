@@ -18,16 +18,16 @@ Getting Started
 
 2) Download your Forked repository 
 
-'''
+```bash
 $ git clone <url>
-'''
+```
 
 3) <optional> Create a Feature Branch
 
-''' 
-$ git branch <whatever>
-$ git checkout <whatever>
-'''
+```bash
+$ git branch <feature>
+$ git checkout <feature>
+```
 
 Submitting Updates
 -------------------
