@@ -47,7 +47,20 @@ Making Changes
 
 Get the status of the current repository::
 
-  $get status
+  $ git status
+
+Add a modified file to the staging area::
+
+  $ git add <file>
+  #Or to add all
+  $ git add
+
+Remove a file from the staging area (keeping original)::
+
+  $ git rm --cache <file>
+  #Or to remove original too
+  $ git rm <file>
+
 
 Getting the difference between files
 ------------------------------------
