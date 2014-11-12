@@ -7,11 +7,16 @@ Git Cheetsheet
 General Terminology
 ===================
 
+
 Configuring Git
 ================
 
 These Settings are great for a single user on one machine.
-Use the **--local** flag for per-repository settings (i.e. if running on a Flash drive)
+
+.. NOTE::
+
+    Use the **--local** flag for per-repository settings (i.e. if running on a Flash drive)
+
 
 Set the username for commits::
 
@@ -25,7 +30,7 @@ Set the Email for commits::
 Create Repositories
 ===================
 
-Create a new repository::
+Create a new repository from scratch::
 
   $ git init
   ....
@@ -74,25 +79,6 @@ For a specific file::
   $ git diff <file>
 
 
-Branches
----------
-
-List Branches (and show current one)::
-
-  $ git branch
-
-Create a branch::
-
-  $ git branch <name>
-
-Switch to a branch::
-
-  $ git checkout <name>
-
-Commit data to a branch::
-
-  $ git push <origin> <branch>
-
 
 General Workflow
 ================
@@ -134,6 +120,7 @@ Remove a branch::
 
   $ git branch -d <name>
 
+
 Forks
 ======
 
@@ -158,4 +145,3 @@ And Merge with the upstream/master::
 .. NOTE::  
   
   Dont forget to push any changes
-
