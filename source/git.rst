@@ -1,8 +1,8 @@
 .. highlight:: sh
 
-===============
-Git Cheetsheet
-===============
+===
+Git 
+===
 
 General Terminology
 ===================
@@ -98,7 +98,7 @@ Pull any recent changes from the remote repository::
 Branches
 ========
 
-Provide a way to work on a feature without commiting to the main branch.
+Provide a way to work on a feature without committing to the main branch.
 
 Create a new branch::
 
@@ -108,7 +108,7 @@ Navigate between branches::
 
   $ git checkout <branch>
 
-Checkin to a branch::
+Check in to a branch::
 
   $ git push origin <branch>
 
@@ -123,6 +123,16 @@ Remove a branch::
 
 Forks
 ======
+
+A fork is a copy of a repository.  Forking allows us to modify the code within 
+a repository without affecting the original project.  Forks can be used as a a starting point for your own project, or to propose changes to the original code.
+
+
+Forking a repository
+---------------------
+
+In github click fork and define the forked repository name
+You can then clone and work in your forked version of the repo.
 
 Synchronising Forks with the upstream repository
 -------------------------------------------------
@@ -144,4 +154,19 @@ And Merge with the upstream/master::
 
 .. NOTE::  
   
-  Dont forget to push any changes
+  Don't forget to push any changes
+
+
+Submitting Pull Requests
+-------------------------
+
+After forking a project, you may want the features you have developed to be 
+integrated into the original code base.  For this we can use a pull request.
+
+To submit a pull request use the *compare and review* button in github.
+
+This will bring up a screen that allows you to check the review you have made, before submitting a pull request.
+
+
+
+
