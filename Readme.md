@@ -48,7 +48,7 @@ $ source env/bin/activate
 
 ```bash
 (env)$ pip install sphinx
-```.
+```
 
 Building the Documents
 -----------------------
