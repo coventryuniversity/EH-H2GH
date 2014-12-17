@@ -34,21 +34,21 @@ Setup the working environment
 
 1) Create a new virtualenv http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
-...bash
+```bash
 $ virtualenv --no-site-packages env
-...
+```
 
 2) Enter the virtualenv
 
-...bash
+```bash
 $ source env/bin/activate
-...
+```
 
 3) Install any dependencies
 
-...bash
+```bash
 (env)$ pip install sphinx
-....
+```.
 
 Building the Documents
 -----------------------
@@ -56,9 +56,9 @@ Building the Documents
 The documents can be compiled using the makefile.
 Several build options exist, but for the moment we will use HTML
 
-...bash
+```bash
 (env)$ make html
-...
+```
 
 The output is available in *build/html*
 
