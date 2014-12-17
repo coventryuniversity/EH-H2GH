@@ -7,8 +7,16 @@ Git Cheetsheet
 General Terminology
 ===================
 
+
 Configuring Git
 ================
+
+These Settings are great for a single user on one machine.
+
+.. NOTE::
+
+    Use the **--local** flag for per-repository settings (i.e. if running on a Flash drive)
+
 
 Set the username for commits::
 
@@ -22,7 +30,7 @@ Set the Email for commits::
 Create Repositories
 ===================
 
-Create a new repository::
+Create a new repository from scratch::
 
   $ git init
   ....
@@ -35,12 +43,29 @@ Clone an existing repository::
 
   $ git clone <url>
 
+Check URL's for a given repository::
+
+  $ git remote -v
+
 Making Changes
 ==============
 
 Get the status of the current repository::
 
-  $get status
+  $ git status
+
+Add a modified file to the staging area::
+
+  $ git add <file>
+  #Or to add all
+  $ git add
+
+Remove a file from the staging area (keeping original)::
+
+  $ git rm --cache <file>
+  #Or to remove original too
+  $ git rm <file>
+
 
 Getting the difference between files
 ------------------------------------
@@ -53,25 +78,6 @@ For a specific file::
 
   $ git diff <file>
 
-
-Branches
----------
-
-List Branches (and show current one)::
-
-  $ git branch
-
-Create a branch::
-
-  $ git branch <name>
-
-Switch to a branch::
-
-  $ git checkout <name>
-
-Commit data to a branch::
-
-  $ git push <origin> <branch>
 
 
 General Workflow
@@ -102,6 +108,10 @@ Navigate between branches::
 
   $ git checkout <branch>
 
+Checkin to a branch::
+
+  $ git push origin <branch>
+
 Merge changes between branches::
 
   $ git merge <branch>
@@ -111,3 +121,27 @@ Remove a branch::
   $ git branch -d <name>
 
 
+Forks
+======
+
+Synchronising Forks with the upstream repository
+-------------------------------------------------
+Setting up so changes to upstream repository can also be pulled::
+
+  $ git remote add upstream <upstream-url>
+
+Fetch the latest upstream repo::
+
+  $ git fetch upstream
+
+Checkout the master branch::
+
+  $ git checkout master
+
+And Merge with the upstream/master::
+
+  $ git merge upstream/master
+
+.. NOTE::  
+  
+  Dont forget to push any changes
