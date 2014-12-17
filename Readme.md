@@ -60,7 +60,7 @@ Several build options exist, but for the moment we will use HTML
 (env)$ make html
 ...
 
-The output is avaialbe in *build/html*
+The output is available in *build/html*
 
 
 Submitting Updates
